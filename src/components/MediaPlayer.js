@@ -1,7 +1,14 @@
-function MediaPlayer() {
+function MediaPlayer(props) {
+
+    function handleMediaClick() {
+        const source = props.musicSource;
+        console.log('clicked')
+        // setUpThenAnimate(props.musicSource, props.musicContext)
+    }
+
     return(
-        <h1>MediaPlayer</h1>
-    )
+            <audio onClick={() => handleMediaClick} src={props.musicSource} id="audio" controls></audio>
+        )
 }
 
 export default MediaPlayer;
