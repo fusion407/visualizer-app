@@ -6,13 +6,15 @@ import Visualizer from './components/Visualizer'
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className="App-header">
-        <MediaPlayer />
+      <MediaPlayer />
       </header>
-      <VisualEditor />
-      <Visualizer />
-    </div>
+      <div className="App">
+        <Visualizer />
+        <VisualEditor />
+      </div>
+    </>
   );
 }
 
